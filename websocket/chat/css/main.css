@@ -9,7 +9,9 @@ Body
 *::after {
   box-sizing: border-box;
 }
-
+*::-webkit-scrollbar {
+    width: 0px;
+}
 html,
 body {
   height: 100%;
@@ -31,7 +33,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background: url("../i/bg.jpg") no-repeat 0 0;
+  background: url("https://netology-code.github.io/hj-homeworks/websocket/chat/i/bg.jpg") no-repeat 0 0;
   -webkit-filter: blur(80px);
           filter: blur(80px);
   -webkit-transform: scale(1.2);
@@ -133,7 +135,7 @@ Messages
   height: 101%;
   width: 100%;
   padding: 0 10px;
-
+  overflow-y: scroll;
 }
 .messages .message {
   clear: both;
